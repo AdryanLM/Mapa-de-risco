@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.risk-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.risk-types, .risk-classification {
+    width: 50%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.risk-types h3, .risk-classification h3 {
+    margin-top: 0;
+}
+
+.risk-list {
+    list-style: none;
+    padding: 0;
+}
+
+.risk-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.risk-item div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.risk-item.acidente div { background-color: #FF5733; }
+.risk-item.ergonomico div { background-color: #FFC107; }
+.risk-item.quimico div { background-color: #FF5733; }
+.risk-item.biologico div { background-color: #FFC107; }
+.risk-item.fisico div { background-color: #FF5733; }
+.risk-item.psicologico div { background-color: #FFC107; }
+.risk-item.eletrico div { background-color: #FF5733; }
+.risk-item.inflamavel div { background-color: #FF5733; }
+.risk-item.explosivo div { background-color: #FF5733; }
+.risk-item.radiologico div { background-color: #FF5733; }
+
+.risk-classification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+.risk-classification h3 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.large.high-risk { width: 100px; height: 100px; background-color: #FF5733; }
+.medium.medium-risk { width: 60px; height: 60px; background-color: #FFC107; }
+.small.low-risk { width: 40px; height: 40px; background-color: #33C3F0; }
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-box {
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    object-fit: cover; /* Ajusta a imagem para cobrir a área da caixa */
+    position: relative;
+    left: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-icons {
+    margin: 10px 0;
+}
+
+.footer-icon {
+    width: 32px; /* Ajuste o tamanho desejado para os ícones */
+    height: 32px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.footer-icons a {
+    text-decoration: none;
+}
